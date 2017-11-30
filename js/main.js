@@ -31,6 +31,7 @@ $('.nav-item').on('click', function(){
   $('#main-nav.navbar').hide();
   $('#main-nav.navbar').addClass('fixed-bottom').fadeIn(700);
   $('.navbar-brand').hide();
+  $('.container-film, .film').addClass('film-color-2');
 });
 // ===========================================================
 
@@ -39,6 +40,7 @@ $('.nav-item').on('click', function(){
 $('#home').on('click', function(){
   $('#main-nav.navbar').removeClass('fixed-bottom');
   $('.navbar-brand').fadeIn(1500);
+  $('.container-film, .film').removeClass('film-color-2');
 })
 // ======================================================
 

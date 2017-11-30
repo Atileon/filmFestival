@@ -25,8 +25,9 @@ div.film{
   left: 0;
   top: -20px;
   background: rgba(52,58,55,1);
+  box-shadow: 0px -3px 5px rgba(0,0,0,.9);
 }
-.film ul{
+.film ul.strips{
   display: block;
   margin: 0;
   padding:0;
@@ -36,15 +37,22 @@ div.film{
 }
 div.film li.white{
   display: inline-block;
-  margin: 10px 5px;
-  border-radius: 3px;
-  width: 20px;
+  margin: 10px 4px;
+  border-radius: 2px;
+  width: 15px;
   height: 60px;
   background: rgba(255, 255, 255, 0.5);
 }
 li.white:last-child{
   margin-right: 0;
   background: red;
+}
+
+/*============================================
+This is for the film effect change color
+=============================================*/
+.film-color-2{
+  background-color: #271000 !important;
 }
 /*==============================================
 This for the Carousel Items
@@ -60,6 +68,16 @@ This for the Carousel Items
 .carousel-caption{
   bottom: 35%;
 }
+
+/*================================================
+This class to prevent scroll toggled by js
+====================================================*/
+.container-program{
+  height: 100vh;
+  background: rgba(255, 0, 0, 0.7);
+}
+
+
 /*================================================
 This class to prevent scroll toggled by js
 ====================================================*/
@@ -67,6 +85,7 @@ This class to prevent scroll toggled by js
   height: 100%;
   overflow: hidden;
 }
+
 /*=================================================
 This to fix the fixed-bottom on Bootstrap
 ==============================================*/
