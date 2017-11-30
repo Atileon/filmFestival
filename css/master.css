@@ -1,0 +1,78 @@
+body{
+  background-image: url("../img/brooklynCinema.png"),
+  url("../img/patternMovie.jpg");
+  background-position-x: center;
+  background-size: 120vw ,40%;
+  background-repeat: no-repeat, repeat;
+}
+div.header-bg{
+  height: 100vh;
+}
+
+/*============================================
+This is for the film effect on navbar
+=============================================*/
+.container-film{
+  position: relative;
+  background-color: rgba(52,58,55,1);
+}
+div.film{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  z-index: -100;
+  left: 0;
+  top: -20px;
+  background: rgba(52,58,55,1);
+}
+.film ul{
+  display: block;
+  margin: 0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+div.film li.white{
+  display: inline-block;
+  margin: 10px 5px;
+  border-radius: 3px;
+  width: 20px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5);
+}
+li.white:last-child{
+  margin-right: 0;
+  background: red;
+}
+/*==============================================
+This for the Carousel Items
+===================================================*/
+.container-carousel{
+  height: 100vh;
+  background: rgb(255,128,0);
+}
+.carousel-item{
+  height: 50vh;
+  background: rgba(255, 0, 0, 0.2);
+}
+.carousel-caption{
+  bottom: 35%;
+}
+/*================================================
+This class to prevent scroll toggled by js
+====================================================*/
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+/*=================================================
+This to fix the fixed-bottom on Bootstrap
+==============================================*/
+.fixed-bottom{
+  bottom: 10px;
+}
+/* TODO: Try new classes to toggle with Jquery to animate the first
+page
+-toggle to view a content on fade on the home page
+ */
