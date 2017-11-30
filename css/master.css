@@ -25,7 +25,7 @@ div.film{
   left: 0;
   top: -20px;
   background: rgba(52,58,55,1);
-  box-shadow: 0px -3px 5px rgba(0,0,0,.9);
+  box-shadow: 0px -3px 5px rgba(0,0,0,.7);
 }
 .film ul.strips{
   display: block;
@@ -74,7 +74,7 @@ This class to prevent scroll toggled by js
 ====================================================*/
 .container-program{
   height: 100vh;
-  background: rgba(255, 0, 0, 0.7);
+  background: rgba(0, 153, 255, 0.7);
 }
 
 
