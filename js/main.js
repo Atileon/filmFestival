@@ -16,6 +16,10 @@ $(document).ready(function(){
 //     $("#demo").collapse("hide")
 //     });
 
+
+// This Line just to go to top on Refresh
+$(document).ready(window.scrollTo(0,0));
+
 // This line to prevent Scroll clickin on the navbar items
 $('body').addClass('stop-scrolling');
 
