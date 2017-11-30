@@ -4,6 +4,7 @@ body{
   background-position-x: center;
   background-size: 120vw ,40%;
   background-repeat: no-repeat, repeat;
+  letter-spacing: 0.1rem;
 }
 div.header-bg{
   height: 100vh;
