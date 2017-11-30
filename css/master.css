@@ -73,6 +73,10 @@ This to fix the fixed-bottom on Bootstrap
 .fixed-bottom{
   bottom: 10px;
 }
+
+.nav-link.active{
+  color:#f60 !important;
+}
 /* TODO: Try new classes to toggle with Jquery to animate the first
 page
 -toggle to view a content on fade on the home page
