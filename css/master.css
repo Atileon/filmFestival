@@ -4,7 +4,6 @@ body{
   background-position-x: center;
   background-size: 120vw ,40%;
   background-repeat: no-repeat, repeat;
-  letter-spacing: 0.1rem;
 }
 div.header-bg{
   height: 100vh;
@@ -58,6 +57,7 @@ This is for the film effect change color
 This for the Carousel Items
 ===================================================*/
 .container-carousel{
+  width: 100vw;
   height: 100vh;
   background: rgb(255,128,0);
 }
@@ -73,8 +73,9 @@ This for the Carousel Items
 This class to prevent scroll toggled by js
 ====================================================*/
 .container-program{
+  width: 100vw;
   height: 100vh;
-  background: rgba(0, 153, 255, 0.7);
+  background: rgba(0, 150, 26, 0.7);
 }
 
 
@@ -84,6 +85,30 @@ This class to prevent scroll toggled by js
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+/*================================================
+Social icons
+====================================================*/
+.social-link{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(75, 75, 75, 1);
+  border-radius: 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease-out;
+}
+.social-link:hover{
+
+  color: #000 !important;
+}
+.twitter{
+  color: #55acee;
+}
+.instagram{
+  color: #e4405f;
+}
+.facebook{
+  color: #3b5999;
 }
 
 /*=================================================

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-// Dont touch the code upon this line
+// Dont touch the code upon this line, it's just in case of move up the link to jquery library on the top on head tag
 
 
 
@@ -26,10 +26,8 @@ $('body').addClass('stop-scrolling');
 // This section to toggle class active from menu and add effects
 // when change page hiding menu and fadein at bottom hiding the logo
 $('.nav-item').on('click', function(){
-  $(this).siblings().removeClass('active');
-  $(this).addClass('active');
-  $('#main-nav.navbar').hide();
-  $('#main-nav.navbar').addClass('fixed-bottom').fadeIn(700);
+  $(this).addClass('active').siblings().removeClass('active');
+  $('#main-nav.navbar').hide().addClass('fixed-bottom').fadeIn(700);
   $('.navbar-brand').hide();
   $('.container-film, .film').addClass('film-color-2');
 });
@@ -56,7 +54,24 @@ $("button.navbar-toggler").click(function(){
 
    });
 // =========================================================
+// ===================================
 
+    // For Youtube Video on Modal
+    // This could take the data-video attribute from button and the src too to post on the iframe on Bootstrap modal
+
+
+    $(".video-modal").click(function () {
+        var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close, #trailer').on('click, hidden.bs.modal', function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+
+
+// ==================================
 // Dont touch the code below this line
 });
 
