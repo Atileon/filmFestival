@@ -53,9 +53,17 @@ This is for the film effect change color
 .film-color-2{
   background-color: #271000 !important;
 }
-/*==============================================
+
+/*============================================
+Personal vertical alignment for jumbotron at homepage
+============================================*/
+.personal-jumbotron{
+  margin-top: 5em;
+}
+
+/*===========================================
 This for the Carousel Items
-===================================================*/
+===========================================*/
 .container-carousel{
   width: 100vw;
   height: 100vh;
@@ -91,15 +99,14 @@ This class to prevent scroll toggled by js
 Social icons
 ====================================================*/
 .social-link{
-  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(75, 75, 75, 1);
   border-radius: 10px 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
   transition: all 0.5s ease-out;
 }
 .social-link:hover{
 
-  color: #000 !important;
+  color: #fff !important;
 }
 .twitter{
   color: #55acee;
@@ -111,15 +118,27 @@ Social icons
   color: #3b5999;
 }
 
-/*=================================================
+/*=========================================
 This to fix the fixed-bottom on Bootstrap
-==============================================*/
+==========================================*/
 .fixed-bottom{
   bottom: 10px;
 }
-
+/*=========================================
+ IMPORTANT COLORS, shadows, background,
+==========================================*/
 .nav-link.active{
   color:#f60 !important;
+}
+
+.orange-color{
+  color: #cc4033 !important;
+}
+.shadow-text{
+  text-shadow: 1px 2px 3px #000 !important;
+}
+.personal-bg-dark{
+  background: linear-gradient(rgba(0,0,0,.7), rgba(77,77,77,.5)) !important;
 }
 /* TODO: Try new classes to toggle with Jquery to animate the first
 page
