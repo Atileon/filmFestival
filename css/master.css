@@ -1,3 +1,12 @@
+:root{
+  --main-color:
+}
+
+
+
+
+
+
 body{
   background-image: url("../img/brooklynCinema.png"),
   url("../img/patternMovie.jpg");
@@ -12,6 +21,9 @@ div.header-bg{
 /*============================================
 This is for the film effect on navbar
 =============================================*/
+#main-nav{
+  margin: 2em auto;
+}
 .container-film{
   position: relative;
   background-color: rgba(52,58,55,1);
@@ -58,9 +70,28 @@ This is for the film effect change color
 Personal vertical alignment for jumbotron at homepage
 ============================================*/
 .personal-jumbotron{
-  padding: 7em;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
+/*thumbnails on jumbotron*/
+.cont-img{
+  width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.img-jumbotron{
 
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+.img-jumbotron:hover{
+  -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
 /*===========================================
 This for the Carousel Items
 ===========================================*/
@@ -98,6 +129,9 @@ This class to prevent scroll toggled by js
 /*================================================
 Social icons
 ====================================================*/
+.social{
+
+}
 .social-link{
   border: 1px solid rgba(75, 75, 75, 1);
   border-radius: 10px 10px;
@@ -132,13 +166,26 @@ This to fix the fixed-bottom on Bootstrap
 }
 
 .orange-color{
-  color: #cc4033 !important;
+  color: #f60 !important;
+}
+.orange-bg{
+  background: #f60 !important;
+  transition: .3s all ease-in-out;
+}
+.orange-bg:hover{
+  background: #ff893b !important;
 }
 .shadow-text{
   text-shadow: 1px 2px 3px #000 !important;
 }
+.shadow-box{
+  box-shadow: 0 -10px 250px #f60 !important;
+}
 .personal-bg-dark{
   background: linear-gradient(rgba(0,0,0,.7), rgba(77,77,77,.5)) !important;
+}
+.personal-bg-orange{
+  background: linear-gradient(rgba(137,55,0,.3), rgba(0,0,0,.7)) !important;
 }
 /* TODO: Try new classes to toggle with Jquery to animate the first
 page

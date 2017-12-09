@@ -28,8 +28,12 @@ $('body').addClass('stop-scrolling');
 $('.nav-item').on('click', function(){
   $(this).addClass('active').siblings().removeClass('active');
   $('#main-nav.navbar').hide().addClass('fixed-bottom').fadeIn(700);
-  $('.navbar-brand').hide();
+  $('#title').hide();
   $('.container-film, .film').addClass('film-color-2');
+});
+
+$('social').on('click', function(){
+  $(this).hasClass('social').removeClass('active');
 });
 // ===========================================================
 
@@ -37,7 +41,7 @@ $('.nav-item').on('click', function(){
 // then fade in the logo
 $('#home').on('click', function(){
   $('#main-nav.navbar').removeClass('fixed-bottom');
-  $('.navbar-brand').fadeIn(1500);
+  $('#title').fadeIn(1500);
   $('.container-film, .film').removeClass('film-color-2');
 })
 // ======================================================
@@ -65,7 +69,7 @@ $("button.navbar-toggler").click(function(){
         videoSRC = $(this).attr("data-video"),
         videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
         $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close, #trailer').on('click, hidden.bs.modal', function () {
+        $(theModal + ' button.close, #trailer, #info').on('click, hidden.bs.modal', function () {
           $(theModal + ' iframe').attr('src', videoSRC);
         });
       });
