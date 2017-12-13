@@ -96,7 +96,11 @@ $("button.navbar-toggler").click(function(){
         $(theModal + ' iframe').attr('src', videoSRCauto);
         $(theModal + ' button.close, #trailer, #info').on('click, hidden.bs.modal', function () {
           $(theModal + ' iframe').attr('src', videoSRC);
+          // I hate the space after the(') on the next line!!!!! I must to pay attention to spaces lol
+          
+          $(theModal + ' .to-clone').remove('.to-clone');
         });
+        $(this).prev().clone().removeClass('d-none').appendTo('.cloned');
       });
 
 
