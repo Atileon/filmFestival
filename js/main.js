@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 // Dont touch the code upon this line, it's just in case of move up the link to jquery library on the top on head tag
 
 
@@ -18,7 +18,8 @@ $(document).ready(function(){
 
 
 // This Line just to go to top on Refresh
-$(document).ready(window.scrollTo(0,0));
+
+  $(this).scrollTop(0);
   // ==================================
 
 
@@ -33,7 +34,7 @@ $('.nav-item').on('click', function(){
   $(this).addClass('active').siblings().removeClass('active');
   $('#main-nav.navbar').fadeIn(700);
   $('#title').hide();
-  $('.container-film, .film').addClass('film-color-2').stop();
+  $('.container-film, .film').addClass('film-color-2');
 });
 
 $('social').on('click', function(){
@@ -54,7 +55,7 @@ $(window).on('scroll',function(){
  if($('.nav-item').hasClass('active')){
    $('#main-nav').css('opacity', .9);
    $('.container-film,.film').addClass('film-color-2');
-   $('.nav-item').css('opacity', 1).addClass('shadow-text,');
+   $('.nav-item').css('opacity', 1).addClass('shadow-text');
  } else{
    $('#main-nav').css('opacity', 1);
    $('.nav-item').css('opacity', 1).removeClass('shadow-text');
@@ -66,9 +67,10 @@ $(window).on('scroll',function(){
 // This simply to return at home and back to top nav
 // then fade in the logo
 $('#home').on('click', function(){
-  $('#main-nav.navbar').removeClass('fixed-bottom');
-  $('#title').fadeIn(1500);
-  $('.container-film, .film').removeClass('film-color-2');
+  location.reload();
+  // $('#main-nav.navbar').removeClass('fixed-bottom');
+  // $('#title').fadeIn(1500);
+  $('.container-film, .film').removeClass('film-color-2').stop();
 });
 // ======================================================
 
@@ -97,7 +99,7 @@ $("button.navbar-toggler").click(function(){
         $(theModal + ' button.close, #trailer, #info').on('click, hidden.bs.modal', function () {
           $(theModal + ' iframe').attr('src', videoSRC);
           // I hate the space after the(') on the next line!!!!! I must to pay attention to spaces lol
-          
+
           $(theModal + ' .to-clone').remove('.to-clone');
         });
         $(this).prev().clone().removeClass('d-none').appendTo('.cloned');
@@ -106,7 +108,21 @@ $("button.navbar-toggler").click(function(){
 
 // ==================================
 // Dont touch the code below this line
-});
+// });
+
+
+// GOOGLE API
+function initMap() {
+        var boff = {lat: 40.702990, lng: -73.994923};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: boff
+        });
+        var marker = new google.maps.Marker({
+          position: boff,
+          map: map
+        });
+      }
 
 
 // TODO: Manipulate the buttons on slides to show trailers or another content
