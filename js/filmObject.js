@@ -45,14 +45,17 @@ $('.info-button').on('click', function(){
         // console.log(movie.title);
         // console.log(movie.description());
         // ==============================================
+        let rateMovie = movie.rate;
       // The .movie-desc class is the container for the description of the object film
        $(this).siblings('.movie-desc')
        // the empty() reset the container and prevent the append replication with another click event
       .empty()
+      .addClass(rateMovie)
       .append(movie.description())
       ;
       $(this).parent('.overlay').mouseleave(function(){
         $(this).children('.movie-desc')
+        .removeClass(rateMovie)
         .empty();
       });
 });

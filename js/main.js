@@ -1,6 +1,6 @@
 // $(document).ready(function(){
 // Dont touch the code upon this line, it's just in case of move up the link to jquery library on the top on head tag
-
+'use strict';
 
 
   // The followin code is to toggle the movies
@@ -19,7 +19,8 @@
 
 // This Line just to go to top on Refresh
 
-  $(this).scrollTop(0);
+
+$('html, body').animate({ scrollTop: 0 }, 'slow');
   // ==================================
 
 
@@ -67,16 +68,17 @@ $(window).on('scroll',function(){
 // This simply to return at home and back to top nav
 // then fade in the logo
 $('#home').on('click', function(){
+
+  // this will animate the scroll to the top of page
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
   location.reload();
-  // $('#main-nav.navbar').removeClass('fixed-bottom');
-  // $('#title').fadeIn(1500);
   $('.container-film, .film').removeClass('film-color-2').stop();
 });
 // ======================================================
 
 // The next lines to hide the film effect from the menu when toggle to vertical menu
 $("button.navbar-toggler").click(function(){
-    var valore =  $(".navbar-toggler").attr("aria-expanded");
+    const valore =  $(".navbar-toggler").attr("aria-expanded");
 
     if (valore == "false") {
       $("div.film").addClass('collapse');
@@ -104,6 +106,19 @@ $("button.navbar-toggler").click(function(){
         });
         $(this).prev().clone().removeClass('d-none').appendTo('.cloned');
       });
+
+      $('#august-6, #august-7, #august-8').hide();
+// Next lines to change aspect of buttons when active on the Movies pages
+
+    $('.movie-btn').on('click',function(){
+      const movies = $(this).data('date');
+
+      $(`#${movies}`).fadeIn(2000).siblings().not('#movie-btns, #popcorns').hide();
+
+      $(this).siblings().removeClass('btn-active');
+      $(this).addClass('btn-active');
+    });
+
 
 
 // ==================================

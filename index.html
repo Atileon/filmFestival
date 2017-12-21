@@ -158,7 +158,7 @@
           </div>
           <!-- End Social only on small devices -->
           <div class="row justify-content-center">
-            <button type="button" class="btn btn-outline-dark text-light shadow-text  orange-bg video-modal mt-3" data-video="https://www.youtube.com/embed/Xz9_z8_8pzg" data-toggle="modal" data-target="#info">
+            <button type="button" class="btn text-light shadow-text  orange-bg video-modal mt-3" data-video="https://www.youtube.com/embed/Xz9_z8_8pzg" data-toggle="modal" data-target="#info">
               <i class="fas fa-eye"></i> Watch here!
             </button>
           </div>
@@ -276,19 +276,36 @@
   <!-- PROGRAM PAGE -->
   <div id="program" class="container-program pt-5">
     <div class="container mt-5">
+      <!-- Buttons group to trigger on respective date -->
+      <div id="movie-btns" class="row text-center justify-content-center my-5">
+
+        <h3 class="col-12 orange-color shadow-text display-4 text-uppercase">August</h3>
+
+        <div class="btn-group justify-content-center bg-dark" role="group" aria-label="Basic example">
+
+          <button type="button" class="movie-btn btn orange-bg text-white btn-active" data-date='august-5'>5</button>
+          <button type="button" class="movie-btn btn orange-bg text-white" data-date='august-6'>6</button>
+          <button type="button" class="movie-btn btn orange-bg text-white" data-date='august-7'>7</button>
+          <button type="button" class="movie-btn btn orange-bg text-white " data-date='august-8'>8</button>
+        </div>
+
+      </div>
+      <!-- end buttons group -->
+
       <!-- Cards Section august 5-->
-      <div class="row justify-content-center">
+      <div id="august-5" class="row justify-content-center">
+
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
           <div class="hovereffect">
-              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\g-poster-mulan.jpg" alt="">
               <div class="overlay">
-                 <h2 class="orange-color">spiderman</h2>
+                 <h2 class="orange-color">Mulan</h2>
                  <div class="to-clone d-none">
-                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
                    <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                  </div>
                  <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+                 <a class="info info-button orange-color" data-time='6pm' data-title='mulan' data-date='august-5' data-rate='g'>Movie Info</a>
 
                  <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
               </div>
@@ -297,15 +314,15 @@
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
           <div class="hovereffect">
-              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg-poster-legoBatman.jpg" alt="">
               <div class="overlay">
-                 <h2 class="orange-color">spiderman</h2>
+                 <h2 class="orange-color">Lego Batman Movie</h2>
                  <div class="to-clone d-none">
-                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
                    <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                  </div>
                  <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+                 <a class="info info-button orange-color" data-time='8pm' data-title='Lego Batman' data-date='august-5' data-rate='pg'>Movie Info</a>
 
                  <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
               </div>
@@ -314,37 +331,37 @@
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
           <div class="hovereffect">
-              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg13-poster-civilWar.jpg" alt="">
               <div class="overlay">
-                 <h2 class="orange-color">spiderman</h2>
+                 <h2 class="orange-color">Capt.America: Civil War</h2>
                  <div class="to-clone d-none">
-                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                   <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">Political interference in the Avengers' activities causes a rift between former allies Captain America and Iron Man.</p>
                  </div>
-                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/dKrVegVI0Us" >trailer</a>
+                 <a class="info info-button orange-color" data-time='10pm' data-title='Captain America' data-date='august-5' data-rate='pg13'>Movie Info</a>
 
                  <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
               </div>
           </div>
         </div>
       </div>
-
       <!-- End Cards Section august 5-->
 
     <!-- Cards Section august 6-->
-      <div class="row justify-content-center d-none">
+      <div id="august-6"class="row justify-content-center ">
+
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
           <div class="hovereffect">
-              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\g-poster-ratatouille.jpg" alt="">
               <div class="overlay">
-                 <h2 class="orange-color">spiderman</h2>
+                 <h2 class="orange-color">Ratatouille</h2>
                  <div class="to-clone d-none">
-                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
                    <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                  </div>
                  <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+                 <a class="info info-button orange-color" data-time='6pm' data-title='ratatouille' data-date='august-6' data-rate='g'>Movie Info</a>
 
                  <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
               </div>
@@ -353,15 +370,15 @@
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
           <div class="hovereffect">
-              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg-poster-nutJob2.jpg" alt="">
               <div class="overlay">
-                 <h2 class="orange-color">spiderman</h2>
+                 <h2 class="orange-color">Nutjob 2</h2>
                  <div class="to-clone d-none">
-                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
                    <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                  </div>
                  <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+                 <a class="info info-button orange-color" data-time='8pm' data-title='nutjob 2' data-date='august-6' data-rate='pg'>Movie Info</a>
 
                  <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
               </div>
@@ -370,14 +387,14 @@
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
           <div class="hovereffect">
-              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg13-poster-spidermanHC.jpg" alt="">
               <div class="overlay">
                  <h2 class="orange-color">spiderman</h2>
                  <div class="to-clone d-none">
-                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
                    <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                  </div>
-                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/xrzXIaTt99U" >trailer</a>
                  <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
 
                  <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
@@ -388,115 +405,119 @@
     <!-- End Cards Section august 6-->
 
     <!-- Cards Section august 7-->
-      <div class="row justify-content-center d-none">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
-        <div class="hovereffect">
-            <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
-            <div class="overlay">
-               <h2 class="orange-color">spiderman</h2>
-               <div class="to-clone d-none">
-                 <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                 <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               </div>
-               <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-               <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+      <div id="august-7" class="row justify-content-center ">
 
-               <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
-            </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
+          <div class="hovereffect">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\g-poster-peanuts.jpg" alt="">
+              <div class="overlay">
+                 <h2 class="orange-color">Peanuts The Movie</h2>
+                 <div class="to-clone d-none">
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                 </div>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
+                 <a class="info info-button orange-color" data-time='6pm' data-title='peanuts' data-date='august-7' data-rate='g'>Movie Info</a>
+
+                 <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
+          <div class="hovereffect">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg-poster-beautyBeast.jpg" alt="">
+              <div class="overlay">
+                 <h2 class="orange-color">Beauty and the Beast</h2>
+                 <div class="to-clone d-none">
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                 </div>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
+                 <a class="info info-button orange-color" data-time='8pm' data-title='beauty and the beast' data-date='august-7' data-rate='pg'>Movie Info</a>
+
+                 <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
+          <div class="hovereffect">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg13-poster-thorRagnarok.jpg" alt="">
+              <div class="overlay">
+                 <h2 class="orange-color">Thor Ragnarok</h2>
+                 <div class="to-clone d-none">
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">Imprisoned, the almighty Thor finds himself in a lethal gladiatorial contest against the Hulk, his former ally. Thor must fight for survival and race against time to prevent the all-powerful Hela from destroying his home and the Asgardian civilization.</p>
+                 </div>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/ue80QwXMRHg" >trailer</a>
+                 <a class="info info-button orange-color" data-time='10pm' data-title='thor ragnarok' data-date='august-7' data-rate='pg13'>Movie Info</a>
+
+                 <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
+              </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
-        <div class="hovereffect">
-            <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
-            <div class="overlay">
-               <h2 class="orange-color">spiderman</h2>
-               <div class="to-clone d-none">
-                 <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                 <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               </div>
-               <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-               <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
-
-               <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
-        <div class="hovereffect">
-            <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
-            <div class="overlay">
-               <h2 class="orange-color">spiderman</h2>
-               <div class="to-clone d-none">
-                 <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                 <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               </div>
-               <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-               <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
-
-               <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
-            </div>
-        </div>
-      </div>
-    </div>
     <!-- End Cards Section august 7-->
 
     <!-- Cards Section august 8-->
-      <div class="row justify-content-center d-none">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
-        <div class="hovereffect">
-            <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
-            <div class="overlay">
-               <h2 class="orange-color">spiderman</h2>
-               <div class="to-clone d-none">
-                 <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                 <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               </div>
-               <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-               <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+      <div id="august-8" class="row justify-content-center ">
 
-               <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
-            </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
+          <div class="hovereffect">
+              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <div class="overlay">
+                 <h2 class="orange-color">spiderman</h2>
+                 <div class="to-clone d-none">
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                 </div>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
+                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+
+                 <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
+          <div class="hovereffect">
+              <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
+              <div class="overlay">
+                 <h2 class="orange-color">spiderman</h2>
+                 <div class="to-clone d-none">
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                 </div>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
+                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+
+                 <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
+          <div class="hovereffect">
+              <img class="w-100 img-responsive" src="img\thumbsFilms\pg13-poster-infinityWar-001.jpg" alt="">
+              <div class="overlay">
+                 <h2 class="orange-color">Avengers: Infinity War</h2>
+                 <div class="to-clone d-none">
+                   <h4 class="card-title orange-color shadow-text text-center text-capitalize">Plot Summary</h4>
+                   <p class="card-text text-white shadow-text lead">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
+                 </div>
+                 <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
+                 <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
+
+                 <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
+              </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
-        <div class="hovereffect">
-            <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
-            <div class="overlay">
-               <h2 class="orange-color">spiderman</h2>
-               <div class="to-clone d-none">
-                 <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                 <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               </div>
-               <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-               <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
-
-               <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 personal">
-        <div class="hovereffect">
-            <img class="w-100 img-responsive" src="http://www.marguttadigital.it/wp-content/uploads/2016/01/Amazing-spider-man-2-compressor.jpg" alt="">
-            <div class="overlay">
-               <h2 class="orange-color">spiderman</h2>
-               <div class="to-clone d-none">
-                 <h4 class="card-title orange-color shadow-text text-center text-capitalize">Card title</h4>
-                 <p class="card-text text-white shadow-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-               </div>
-               <a class="info video-modal orange-color" href="#trailer" data-target="#trailer" data-toggle="modal" data-video="https://www.youtube.com/embed/6ZfuNTqbHE8" >trailer</a>
-               <a class="info info-button orange-color" data-time='10pm' data-title='spiderman' data-date='august-6' data-rate='pg13'>Movie Info</a>
-
-               <p class='movie-desc text-white text-center text-uppercase shadow-text p-5'></p>
-            </div>
-        </div>
-      </div>
-    </div>
     <!-- End Cards Section august 8-->
-
+      <div id='popcorns' class="row col-12 justify-content-center">
+        <h3 class="orange-color shadow-text text-center text-uppercase my-5"><i class="fas fa-exclamation-triangle"></i> Don't forget the popcorns!!</h3>
+      </div>
     </div>
   </div>
   <!-- END PROGRAM PAGE -->
@@ -577,13 +598,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/filmObject.js"></script>
-<script async defer
+<script defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf10TAW97S3aBzKEz8W1dMUX2BE7JldGw&callback=initMap">
 </script>
-<script>
-$(document).ready(function(){
-  $(this).scrollTop(0);
-});
-</script>
+
 </body>
 </html>
