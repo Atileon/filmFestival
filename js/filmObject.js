@@ -51,6 +51,7 @@ $('.info-button').on('click', function(){
        // the empty() reset the container and prevent the append replication with another click event
       .empty()
       .addClass(rateMovie)
+      .addClass('text-white font-italic lead text-center text-uppercase shadow-text mt-5 py-5 px-3')
       .append(movie.description())
       ;
       $(this).parent('.overlay').mouseleave(function(){

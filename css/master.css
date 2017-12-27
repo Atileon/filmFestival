@@ -17,19 +17,23 @@ Containers pages + googlemap id
 ====================================================*/
 
 
-div.header-bg,.carousel-page,.container-program,.container-google{
+div.header-bg,.carousel-page,.container-program,.container-google, .container-regs{
   min-height: 100vh;
 }
 
 .container-program{
-  background:rgba(15,55,81,.7);
+  background:rgba(15,55,81,.8);
 }
 .container-google{
-  background-color: rgba(0,100,100,.5);
+  background-color: rgba(0,100,100,.8);
   border-top: 2px solid rgba(50,100,100,1);
 }
 .carousel-page{
   min-height: 150vh;
+}
+.container-regs{
+  background-color: rgba(40,0,0,.8);
+  border-top: 2px solid rgba(255,0,0,.9);
 }
 #map {
   height: 50vh;
@@ -37,11 +41,22 @@ div.header-bg,.carousel-page,.container-program,.container-google{
    margin: 0 auto;
 }
 
+#august-5,#august-6,#august-7, #august-8{
+  height: 600px;
+}
+#the-end{
+  height: 30vh;
+  background: rgba(0,0,0,.8);
+
+}
 /*============================================
 This is for the film effect on navbar
 =============================================*/
 #main-nav{
   margin: .7em auto;
+}
+#partners{
+  font-size: 1.2rem;
 }
 .container-film{
   position: relative;
@@ -148,10 +163,10 @@ Social icons
   transition: .5s all ease-in-out;
 }
 .social-container{
-  box-shadow: 0 2px 10px #000;
-  border: 1px solid rgba(10,100,100,.7);
+  box-shadow: 0 -5px 20px #1c6f6f;
+  border: 1px solid rgba(10, 224, 224, 0.7);
   border-radius: 10px;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(13, 129, 129, 0.42);
   padding: 5px;
 }
 .social-link{
@@ -240,6 +255,19 @@ This to fix the fixed-bottom on Bootstrap
 }
 button:focus{
   outline: 5px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
+}
+.form-control{
+  background-color: #000;
+  color: #f60;
+  border: 1px solid #f60;
+  transition: all .5s ease-in-out;
+}
+.form-control:focus{
+  background-color: #000;
+  color: #f60;
+  border: 1px solid #f60;
+  box-shadow: 0 0 20px #f60;
 }
 /*=========================================
 Buttons on Movie page
@@ -333,6 +361,18 @@ Buttons on Movie page
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+/*===============================
+ popcorn adv on movie page
+ ==================================*/
+.popcorn-box{
+  background:  rgba(137,79,0,.5);
+  padding: 10px;
+  border-radius:  25px 25px 0 0;
+  border: 1px solid #f60;
+  border-bottom: 0;
+  box-shadow: 0 -15px 150px rgba(252,102,1,.7);
+
 }
 /* TODO: Try new classes to toggle with Jquery to animate the first
 page
