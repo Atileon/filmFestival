@@ -45,7 +45,7 @@ div.header-bg,.carousel-page,.container-program,.container-google, .container-re
   height: 600px;
 }
 #the-end{
-  height: 30vh;
+  min-height: 25vh;
   background: rgba(0,0,0,.8);
 
 }
