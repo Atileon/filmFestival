@@ -119,9 +119,15 @@ $("button.navbar-toggler").click(function(){
       $(this).addClass('btn-active');
     });
 
+// This lines for set options on the date input on form
     $('#dates').datepicker({
+      showAnim: "slideDown",
+      defaultDate: new Date(2018,8 - 1,5),
       minDate: new Date(2018, 8 - 1, 5),
       maxDate: new Date(2018, 8 - 1, 8)
+    })
+    .on('keyup', function(){
+      $('input#dates').val('Pick a date please');
     });
 
 
@@ -142,8 +148,4 @@ function initMap() {
           position: boff,
           map: map
         });
-      }
-
-
-// TODO: Manipulate the buttons on slides to show trailers or another content
-// TODO: Try to sticky bottom the navbar but not on home
+      };
