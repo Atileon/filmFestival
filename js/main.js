@@ -119,6 +119,11 @@ $("button.navbar-toggler").click(function(){
       $(this).addClass('btn-active');
     });
 
+    $('#dates').datepicker({
+      minDate: new Date(2018, 8 - 1, 5),
+      maxDate: new Date(2018, 8 - 1, 8)
+    });
+
 
 
 // ==================================

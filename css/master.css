@@ -146,13 +146,6 @@ This for the Carousel Items
   margin-top: 80px;
 }
 
-/*================================================
-This class to prevent scroll toggled by js
-====================================================*/
-/*.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}*/
 
 /*================================================
 Social icons
@@ -372,9 +365,27 @@ Buttons on Movie page
   border: 1px solid #f60;
   border-bottom: 0;
   box-shadow: 0 -15px 150px rgba(252,102,1,.7);
-
 }
-/* TODO: Try new classes to toggle with Jquery to animate the first
-page
--toggle to view a content on fade on the home page
- */
+/*===============================
+  Datepicker style
+ ==================================*/
+
+#ui-datepicker-div{
+  background-color: rgba(0, 0, 0, 1) !important;
+  border: none;
+  box-shadow: 0 4px 100px #f60;
+}
+.ui-datepicker-header{
+  background: #f60 !important;
+  border: none;
+  color: white !important;
+}
+.ui-datepicker-calendar{
+  color: white !important;
+}
+.ui-state-default{
+  background: #f60 !important;
+  color: white !important;
+  text-align: center !important;
+  border: none !important;
+}
