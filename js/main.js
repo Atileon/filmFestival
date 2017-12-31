@@ -129,6 +129,8 @@ $("button.navbar-toggler").click(function(){
     .on('keyup', function(){
       $('input#dates').val('Pick a date please');
     });
+// This to init the tooltip on progress bars
+    $('[data-toggle="tooltip"]').tooltip();
 
 
 

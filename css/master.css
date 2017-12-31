@@ -389,3 +389,10 @@ Buttons on Movie page
   text-align: center !important;
   border: none !important;
 }
+/*===============================
+spacing the progress bars
+ ==================================*/
+
+.progress{
+  margin-top: 1rem !important;
+}
